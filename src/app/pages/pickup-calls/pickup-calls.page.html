@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Pickup Calls</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-pickup-call-card
+    status="hold"
+    updateAt="25/04/2024"
+    createdAt="24/04/2024"
+    notes="we have two bags that are full, one with plastic and the orther with glasses"
+  ></app-pickup-call-card>
+  <app-pickup-call-card
+    status="processing"
+    updateAt="24/04/2024 10:00"
+    createdAt="24/04/2024"
+    notes="we have two bags that are full, one with plastic and the orther with glasses"
+  ></app-pickup-call-card>
+  <app-pickup-call-card
+    status="finished"
+    updateAt="23/04/2024 18:00"
+    createdAt="22/04/2024"
+    value="$ 15,00"
+  ></app-pickup-call-card>
+</ion-content>
