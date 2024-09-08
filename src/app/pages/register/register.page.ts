@@ -21,7 +21,7 @@ export class RegisterPage implements OnInit, OnDestroy {
   registerStateSubscription!: Subscription;
 
   constructor(private formBuilder: FormBuilder, private store: Store<AppState>,
-    private tostController: ToastController
+    private toastController: ToastController
   ) { }
 
   ngOnInit() {
@@ -61,8 +61,8 @@ export class RegisterPage implements OnInit, OnDestroy {
    private onError(state : RegisterState) {
 
     if (state.error) {
-      this.tostController.create({
-        message: state.error,
+      this.toastController.create({
+        message: state.error.message,
         duration: 5000,
         header: 'Registration not done'
       }).then(toast => toast.present());
