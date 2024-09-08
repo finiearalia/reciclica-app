@@ -10,6 +10,7 @@ export class ErrorMessageComponent  implements OnInit {
 
   @Input() message: string = '';
   @Input() field!: FormGroup;
+  @Input() error: string = '';
 
   constructor() { }
 

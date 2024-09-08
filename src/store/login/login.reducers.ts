@@ -1,11 +1,11 @@
 import { Action, createReducer, on } from "@ngrx/store";
 import { loginFail, loginSuccess, recoverPassword, recoverPasswordFail, recoverPasswordSuccess } from "./login.actions";
 import { LoginState } from "./LoginState";
-import { AppinitialState } from "../AppInitialState";
+import { AppInitialState } from "../AppInitialState";
 import { login } from "./login.actions";
 
 
-const initialState: LoginState = AppinitialState.login;
+const initialState: LoginState = AppInitialState.login;
 
 
 const reducer = createReducer(initialState,

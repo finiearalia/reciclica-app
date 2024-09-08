@@ -1,7 +1,7 @@
 import { AppState } from "./AppState";
 import { show } from "./loading/loading.actions";
 
-export const AppinitialState: AppState = {
+export const AppInitialState: AppState = {
   loading: {
     show: false
   },
@@ -11,5 +11,10 @@ export const AppinitialState: AppState = {
     isRecoveringPassword: false,
     isLoggedIn: false,
     isLoggingIn: false
+  },
+  register: {
+    error: null,
+    isRegistering: false,
+    isRegistered: false
   }
 }
